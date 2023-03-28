@@ -20,4 +20,10 @@ const flashDrive = prompt('Enter your flash drive capacity');
 const fileSize = 820;
 const result = Math.floor(flashDrive * 1024/fileSize);
 alert(result);
-
+// Additional tasks
+//Task 1
+const kilometrs = prompt('Enter value in kilometrs: ');
+const factor = 0.621371;
+const convector = Math.floor(factor * kilometrs); 
+alert(convector);
+// Task 2
