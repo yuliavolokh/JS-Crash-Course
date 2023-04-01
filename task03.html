@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Git Clone Command</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>Git Clone Command</h1>
+
+    <p>
+      <b>Description:</b> The "git clone" command is used to create a copy of a
+      Git repository on your local machine.
+    </p>
+
+    <p><b>Syntax:</b></p>
+    <p>git clone &lt;repository URL&gt;</p>
+
+    <p><b>Examples:</b></p>
+    <ul>
+      <li>git clone https://github.com/user/repo.git</li>
+      <li>git clone git@github.com:user/repo.git</li>
+    </ul>
+
+    <p>
+      <b>Explanation:</b> The "git clone" command takes a repository URL as its
+      argument and creates a copy of the repository on your local machine. The
+      URL can be a HTTPS URL or a SSH URL. Once the clone is complete, you can
+      make changes to the code and push them back to the original repository.
+    </p>
+
+    <p><b>Options:</b></p>
+    <table>
+      <tr>
+        <th>Option</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>--depth=n</td>
+        <td>
+          Creates a shallow clone with a history truncated to the specified
+          number of commits
+        </td>
+      </tr>
+      <tr>
+        <td>--branch=name</td>
+        <td>Clone only a specific branch instead of the entire repository</td>
+      </tr>
+      <tr>
+        <td>--recursive</td>
+        <td>Clones submodules recursively</td>
+      </tr>
+    </table>
+    <h1>Git Push Command</h1>
+
+    <p>
+      <b>Description:</b> The "git push" command is used to upload local
+      repository content to a remote repository.
+    </p>
+
+    <p><b>Syntax:</b></p>
+    <p>git push &lt;remote&gt; &lt;branch&gt;</p>
+
+    <p><b>Examples:</b></p>
+    <ul>
+      <li>git push origin master</li>
+      <li>git push heroku main</li>
+    </ul>
+
+    <p>
+      <b>Explanation:</b> The "git push" command takes two arguments - the
+      remote repository and the branch you want to push. The remote can be a
+      name (e.g. origin) or a URL. The branch can be a name (e.g. master) or a
+      reference (e.g. HEAD). Once the push is complete, the changes will be
+      reflected in the remote repository.
+    </p>
+
+    <p><b>Options:</b></p>
+    <table>
+      <tr>
+        <th>Option</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>-f, --force</td>
+        <td>Forces the push, even if it results in a non-fast-forward merge</td>
+      </tr>
+      <tr>
+        <td>--tags</td>
+        <td>Pushes all tags to the remote repository</td>
+      </tr>
+      <tr>
+        <td>--dry-run</td>
+        <td>Simulates the push without actually pushing any changes</td>
+      </tr>
+    </table>
+    <h1>Git Revert Command</h1>
+
+    <p>
+      <b>Description:</b> The "git revert" command is used to create a new
+      commit that undoes the changes made by a previous commit.
+    </p>
+
+    <p><b>Syntax:</b></p>
+    <p>git revert &lt;commit&gt;</p>
+
+    <p><b>Examples:</b></p>
+    <ul>
+      <li>git revert HEAD</li>
+      <li>git revert a1b2c3d4</li>
+    </ul>
+
+    <p>
+      <b>Explanation:</b> The "git revert" command takes a commit as its
+      argument and creates a new commit that undoes the changes made by that
+      commit. This is done by creating a new commit that applies the inverse of
+      the changes made in the original commit. The new commit will have the
+      opposite effect of the original commit.
+    </p>
+  </body>
+</html>
