@@ -36,7 +36,7 @@ function getNextDate(dateStr) {
     return `${year}-${(month + 1).toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
 }
 const getData = prompt('Enter current data: ');
-alert(getNextDate(daysInMonth));
+alert(getNextDate(getData));
 //Task 2.1
 let range = parseInt(prompt('Enter the range of number'));
 let sum = 0; 
@@ -95,3 +95,4 @@ do {
     continueLoop = confirm(message);
     i = (i + 1) % daysOfWeek.length;
 } while (continueLoop);
+alert(daysOfWeek);
