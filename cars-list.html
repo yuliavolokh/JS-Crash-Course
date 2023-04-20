@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="C:\Users\home\Desktop\bootstrap.css" />
+    <title>Car</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="mb-3">
+          <h2>Додати автомобіль</h2>
+          <label for="model">Модель</label>
+          <input type="text" id="model" placeholder="Enter model" required />
+          <label for="year">Рік</label>
+          <input
+            type="number"
+            id="year"
+            placeholder="Enter the year of production"
+            required
+          />
+          <label for="price">Ціна</label>
+          <input
+            type="number"
+            id="price"
+            placeholder="Enter the price"
+            required
+          />
+          <label for="color">Колір</label>
+          <input
+            type="text"
+            id="color"
+            placeholder="Enter the color"
+            required
+          />
+          <label for="customs">Розмитнення</label>
+          <select id="customs" required>
+            <option value="">Виберіть статус</option>
+            <option value="yes">Так</option>
+            <option value="no">Ні</option>
+          </select>
+          <button type="submit" class="btn btn-primary">Додати</button>
+        </div>
+      </form>
+      <div class="container">
+        <h2>Car's list</h2>
+        <table class="table table-striped table-hover" id="product-table">
+          <thead>
+            <tr>
+              <th scope="col" id="brandInput">Brand</th>
+              <th scope="col" id="modelInput">Model</th>
+              <th scope="col" id="yearInput">Year of production</th>
+              <th scope="col" id="priceInput">price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Mercedes-Benz</th>
+              <td>cls-class 400</td>
+              <td>2018</td>
+              <td>65000$</td>
+            </tr>
+            <tr>
+              <th scope="row">BMW</th>
+              <td>X5</td>
+              <td>2012</td>
+              <td>27000$</td>
+            </tr>
+            <tr>
+              <th scope="row">Audi</th>
+              <td>Q5</td>
+              <td>2013</td>
+              <td>29000$</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table table-striped">
+        <label for="floatingInputValue">Пошук:</label>
+        <input type="text" id="search" name="search" class="form-control" />
+        <button id="add-product-btn" class="btn btn-primary">Пошук</button>
+      </div>
+      <button type="button" onclick="clearCars()">
+        Очистити список автомобілів
+      </button>
+    </div>
+    <script src="C:\Users\home\Desktop\bootstrap.js"></script>
+    <script src="./car.js"></script>
+  </body>
+</html>
